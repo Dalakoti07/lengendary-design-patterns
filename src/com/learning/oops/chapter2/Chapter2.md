@@ -48,4 +48,9 @@ Observers can subscribe or unsubscribe to data-repository/Observable at anytime 
 Java also provide in-built apis to use observer pattern, if u dont want to make it from scratch, but making from scratch is also easy :)
 
 
+####Learnings
+- Strive for loosely coupled designs between objects that interact
+- Observer - define a one-to-many dependency between object so that when one objects change state, all its dependents are notified and updated automatically
 
+- Thus if I want to talk to weather-data-repo I just want to implement observer and let Observable need to add me as a subscriber and then i will be notified about the changes.
+So this Pattern is clean and can be exploited while making api's or socket connection.
