@@ -1,12 +1,23 @@
 package com.learning.oops.chapter4.pizza;
 
-public class ChicagoStyleCheesePizza extends Pizza {
-    public ChicagoStyleCheesePizza(){
-        name="Chicago Style Deep Dish Cheese Pizza";
-        dough="Extra Thick Crust Dough";
-        sauce="Plum Tomato Sauce";
+import com.learning.oops.chapter4.ingredients.PizzaIngredientFactory;
 
-        toppings.add("Shredded Mozzarella Cheese");
+public class ChicagoStyleCheesePizza extends Pizza {
+    PizzaIngredientFactory ingredientFactory;
+
+    public ChicagoStyleCheesePizza(PizzaIngredientFactory pizzaIngredientFactory){
+        this.ingredientFactory=pizzaIngredientFactory;
+    }
+
+    @Override
+    public void prepare() {
+        name="Chicago Style Deep Dish Cheese Pizza";
+        /*dough="Extra Thick Crust Dough";
+        sauce="Plum Tomato Sauce";*/
+        dough=ingredientFactory.createDough();
+        sauce=ingredientFactory.createSauce();
+        cheese=ingredientFactory.createCheese();
+//        toppings.add("Shredded Mozzarella Cheese");
     }
 
     @Override

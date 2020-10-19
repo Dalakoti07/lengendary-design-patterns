@@ -76,7 +76,19 @@ class to instantiate. Factory Method lets a class defer instantiation to subclas
 
 <hr>
 
+###Problem
+We did everything well but some franchises used bad quality ingredients to minimize the cost, so we want to stop that, the one way to stop them is using our own factory that make quality products and ship them to these franchises.
+So we create Ingredients factory for each franchise, so that they can get quality ingredients from there without affection our brand-value.
+
+This would create factory for all ingredients 
+
+####Abstract Factory Pattern defined
+The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+![image](../images/ch4b.png)
+
+Lets see what was this in our case:
+![image](../images/ch4c.png)
 
 
-
-
+###Factory vs Abstract Factory
+![image](../images/ch4d.png)

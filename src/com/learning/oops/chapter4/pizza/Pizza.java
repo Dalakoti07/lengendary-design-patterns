@@ -1,20 +1,30 @@
 package com.learning.oops.chapter4.pizza;
 
+import com.learning.oops.chapter4.ingredients.Utils;
+
 import java.util.ArrayList;
 
 public abstract class Pizza {
-    String name,dough,sauce;
+    String name;
+    Utils.Dough dough;
+    Utils.Sauce sauce;
+    Utils.Cheese cheese;
+
+    public Utils.Veggies veggies[];
+
     public ArrayList<String> toppings= new ArrayList<>();
 
-    public void prepare(){
-        System.out.println("Preparing " + name);
+    // making prepare abstract
+    public abstract void prepare();
+//    {
+        /*System.out.println("Preparing " + name);
         System.out.println("Tossing dough...");
         System.out.println("Adding sauce...");
         System.out.println("Adding toppings: ");
         for (int i = 0; i < toppings.size(); i++) {
             System.out.println(" " + toppings.get(i));
-        }
-    }
+        }*/
+//    }
 
     public void bake(){
         System.out.println("Bake for 25 mins at 350 temperature");
@@ -29,5 +39,10 @@ public abstract class Pizza {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString() {
+        return "pizza name is :"+name;
     }
 }
