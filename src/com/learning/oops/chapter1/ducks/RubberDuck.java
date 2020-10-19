@@ -1,4 +1,9 @@
-package com.learning.oops.chapter1;
+package com.learning.oops.chapter1.ducks;
+
+import com.learning.oops.chapter1.duckBehaviour.FlyBehaviour;
+import com.learning.oops.chapter1.duckBehaviour.FlyNoWay;
+import com.learning.oops.chapter1.duckBehaviour.MuteQuack;
+import com.learning.oops.chapter1.duckBehaviour.QuackBehaviour;
 
 public class RubberDuck extends Duck {
     public RubberDuck(){
@@ -13,30 +18,30 @@ public class RubberDuck extends Duck {
     }
 
     @Override
-    void display() {
+    public void display() {
         super.display();
         System.out.println("I am Rubber Duck");
     }
 
     @Override
-    void setFlyBehaviour(FlyBehaviour behaviour) {
+    public void setFlyBehaviour(FlyBehaviour behaviour) {
         super.setFlyBehaviour(behaviour);
         flyBehaviour=behaviour;
     }
 
     @Override
-    void setQuackBehaviour(QuackBehaviour behaviour) {
+    public void setQuackBehaviour(QuackBehaviour behaviour) {
         super.setQuackBehaviour(behaviour);
         quackBehaviour=behaviour;
     }
 
     @Override
-    void performFly() {
+    public void performFly() {
         flyBehaviour.fly();
     }
 
     @Override
-    void performQuack() {
+    public void performQuack() {
         quackBehaviour.quack();
     }
 }

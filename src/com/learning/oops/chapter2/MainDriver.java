@@ -1,5 +1,11 @@
 package com.learning.oops.chapter2;
 
+import com.learning.oops.chapter2.observable.WeatherData;
+import com.learning.oops.chapter2.observer.CurrentConditionsDisplay;
+import com.learning.oops.chapter2.observer.ForecastPredictionsDisplay;
+import com.learning.oops.chapter2.observer.HeatIndexDisplay;
+import com.learning.oops.chapter2.observer.StatisticsDisplay;
+
 public class MainDriver {
     public static void main(String[] args) {
         WeatherData weatherData= new WeatherData();

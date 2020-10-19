@@ -1,15 +1,17 @@
-package com.learning.oops.chapter2;
+package com.learning.oops.chapter2.observer;
 
-public class ForecastPredictionsDisplay implements Observer,DisplayElement {
+import com.learning.oops.chapter2.observable.Observable;
+
+public class CurrentConditionsDisplay implements Observer,DisplayElement {
     private float temp,humidity,pressure;
 
-    public ForecastPredictionsDisplay(Observable observable){
+    public CurrentConditionsDisplay(Observable observable){
         observable.AddObserver(this);
     }
 
     @Override
     public void display() {
-        System.out.println("forecast conditions may be Temperature is "+temp+" humidity is "+humidity+" and pressure is "+pressure);
+        System.out.println("current conditions are  Temperature is "+temp+" humidity is "+humidity+" and pressure is "+pressure);
     }
 
     @Override

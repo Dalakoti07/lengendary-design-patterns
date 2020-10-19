@@ -1,4 +1,7 @@
-package com.learning.oops.chapter1;
+package com.learning.oops.chapter1.ducks;
+
+import com.learning.oops.chapter1.duckBehaviour.FlyBehaviour;
+import com.learning.oops.chapter1.duckBehaviour.QuackBehaviour;
 
 abstract public class Duck {
     // behavious

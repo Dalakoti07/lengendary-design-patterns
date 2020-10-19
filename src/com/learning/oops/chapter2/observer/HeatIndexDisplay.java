@@ -1,4 +1,6 @@
-package com.learning.oops.chapter2;
+package com.learning.oops.chapter2.observer;
+
+import com.learning.oops.chapter2.observable.Observable;
 
 public class HeatIndexDisplay implements Observer,DisplayElement {
     float heatIndex = 0.0f;

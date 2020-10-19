@@ -1,5 +1,10 @@
 package com.learning.oops.chapter1;
 
+import com.learning.oops.chapter1.duckBehaviour.FlyRocketSpeed;
+import com.learning.oops.chapter1.ducks.MallardDuck;
+import com.learning.oops.chapter1.ducks.RubberDuck;
+import com.learning.oops.chapter1.ducks.SuperDuck;
+
 public class mainClass {
     public static void main(String[] args) {
         // using different object

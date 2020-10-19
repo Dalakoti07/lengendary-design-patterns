@@ -1,8 +1,12 @@
-package com.learning.oops.chapter1;
+package com.learning.oops.chapter1.ducks;
 
-public class MallardDuck extends Duck {
+import com.learning.oops.chapter1.duckBehaviour.FlyBehaviour;
+import com.learning.oops.chapter1.duckBehaviour.FlyWithWing;
+import com.learning.oops.chapter1.duckBehaviour.Quack;
+import com.learning.oops.chapter1.duckBehaviour.QuackBehaviour;
 
-    public MallardDuck(){
+public class SuperDuck extends Duck {
+    public SuperDuck(){
         // overriding var in super
         flyBehaviour=new FlyWithWing();
         quackBehaviour= new Quack();
@@ -14,13 +18,13 @@ public class MallardDuck extends Duck {
     }
 
     @Override
-    void display() {
+    public void display() {
         super.display();
-        System.out.println("I am Mallard Duck");
+        System.out.println("I am Super Duck");
     }
 
     @Override
-    void setFlyBehaviour(FlyBehaviour behaviour) {
+    public void setFlyBehaviour(FlyBehaviour behaviour) {
         super.setFlyBehaviour(behaviour);
         flyBehaviour=behaviour;
     }
@@ -32,7 +36,7 @@ public class MallardDuck extends Duck {
     }
 
     @Override
-    void performFly() {
+    public void performFly() {
         flyBehaviour.fly();
     }
 

@@ -1,4 +1,6 @@
-package com.learning.oops.chapter2;
+package com.learning.oops.chapter2.observer;
+
+import com.learning.oops.chapter2.observable.Observable;
 
 public class StatisticsDisplay implements DisplayElement,Observer {
     private float temp,humidity,pressure;
