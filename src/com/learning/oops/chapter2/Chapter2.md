@@ -54,3 +54,5 @@ Java also provide in-built apis to use observer pattern, if u dont want to make 
 
 - Thus if I want to talk to weather-data-repo I just want to implement observer and let Observable need to add me as a subscriber and then i will be notified about the changes.
 So this Pattern is clean and can be exploited while making api's or socket connection.
+
+![Learnings](../images/ch2a.png)

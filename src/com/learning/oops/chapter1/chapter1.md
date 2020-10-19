@@ -29,3 +29,4 @@ Encapsulates what vary (Like flyable and quackable behaviour)
 Favour Composition over inheritance (Like use Interface instance, rather than implementing interface, as we can use runtime polymorphism)
 Program to interface not implementation (Use Interface instance rather than class instance, because if we do so then we can make changes in program easily rather than making changes in code directly.)
 
+![Learnings](../images/ch1a.png)
