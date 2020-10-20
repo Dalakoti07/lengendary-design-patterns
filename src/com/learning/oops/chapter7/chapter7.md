@@ -1,4 +1,4 @@
-#Adapter and Facade Pattern
+# Adapter and Facade Pattern
 
 The Adapter Pattern converts the interface of a class into another interface the clients expect. Adapter lets
 classes work together that couldn’t otherwise because of incompatible interfaces.
@@ -19,7 +19,7 @@ Facade is simple, very intiutive.
 The Facade Pattern provides a unifi ed interface to a set of interfaces in a subsytem. Facade defi nes a higher-
 level interface that makes the subsystem easier to use.
 
-####Problem : Making a home theater
+#### Problem : Making a home theater
 ![image](../images/ch7b.png)
 ![image](../images/ch7c.png)
 

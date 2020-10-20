@@ -1,4 +1,4 @@
-##Strategy Pattern
+## Strategy Pattern
 
 Consider a game making company which make DuckSimulated Games.
 Now the company has simple ducks which can swim and they have their names.

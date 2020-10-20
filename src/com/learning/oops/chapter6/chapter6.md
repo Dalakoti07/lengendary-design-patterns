@@ -1,4 +1,4 @@
-#Command Pattern
+# Command Pattern
 
 You are asked to implement a home automation API for a remote which has 7 slots and each slot has 'on' and 'off' button for each appliance, and we have 
 a undo button also in the remote, which undos the last command.
@@ -14,7 +14,7 @@ We have a fan which can be made high and low, we have garage door and we have di
 
 We will you command pattern which make command remote loosely coupled and thus make changes very easy 
 
-#####Definition
+##### Definition
 The Command Pattern encapsulates a request as an object, thereby letting you parameterize other objects
 with different requests, queue or log requests, and support undoable operations.
 

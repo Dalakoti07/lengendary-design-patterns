@@ -1,4 +1,4 @@
-#Factory Pattern
+# Factory Pattern
 
 Get ready to bake some loosely coupled OO designs. There is more to making objects than just using the new operator. You’ll learn that instantiation is an activity that 
 shouldn’t always be done in public and can often lead to coupling problems. And you don’t want that, do you? Find out how Factory Patterns can help save you from embarrasing dependencies.
@@ -7,7 +7,7 @@ shouldn’t always be done in public and can often lead to coupling problems. An
 The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
 
-####Problem
+#### Problem
 There is a pizza company which makes different types of Pizzas, so here is the code
 ````
     Pizza orderPizza(String type) {
@@ -29,7 +29,7 @@ There is a pizza company which makes different types of Pizzas, so here is the c
 The above code is not closed for modification, if we want to stop producing greek pizza and add two more pizza than we need to add 6 lines and delet 3 lines in above code.
 
 So to make orderPizza close for modification we put factory pattern
-####Note 
+#### Note 
 What is benefit of this? Are not we pushing the thing to another class?
 <hr>
 One thing to remember is that the SimplePizzaFactory may have many clients. We’ve only seen the orderPizza() method;
@@ -76,13 +76,13 @@ class to instantiate. Factory Method lets a class defer instantiation to subclas
 
 <hr>
 
-###Problem
+### Problem
 We did everything well but some franchises used bad quality ingredients to minimize the cost, so we want to stop that, the one way to stop them is using our own factory that make quality products and ship them to these franchises.
 So we create Ingredients factory for each franchise, so that they can get quality ingredients from there without affection our brand-value.
 
 This would create factory for all ingredients 
 
-####Abstract Factory Pattern defined
+#### Abstract Factory Pattern defined
 The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 ![image](../images/ch4b.png)
 
@@ -90,5 +90,5 @@ Lets see what was this in our case:
 ![image](../images/ch4c.png)
 
 
-###Factory vs Abstract Factory
+### Factory vs Abstract Factory
 ![image](../images/ch4d.png)

@@ -1,18 +1,18 @@
-##Decorator Pattern (Open-Close Principle )
+## Decorator Pattern (Open-Close Principle )
 
-####Design Principle
+#### Design Principle
 Classes should be open for extension, but closed for modification.
 
 Our goal is to allow classes to be easily extended to incorporate new behavior without modifying existing code.
-#####What do we get if we accomplish this? 
+##### What do we get if we accomplish this? 
 Designs that are resilient to change and fl exible enough to take on new functionality to meet changing requirements.
 
-#####Note
+##### Note
 - While it may seem like a contradiction, there are techniques for allowing code to be extended without direct modification.
 - Be careful when choosing the areas of code that need to be extended; applying the Open-Closed Principle EVERYWHERE is wasteful, unnecessary, and can lead to complex, hard to understand code.
 
 
-####Some Questions
+#### Some Questions
 - Question - Open for extension and closed for modification? That sounds very contradictory. How can a design be both?
     
     That’s a very good question. It
@@ -43,7 +43,7 @@ Designs that are resilient to change and fl exible enough to take on new functio
   
 - For more see page number 99 of book.
 
-###Star-buck problem
+### Star-buck problem
 Modelling it into better problem as per understanding.
 Suppose we have paneer pizza and we can serve that pizza with topping which includes sauce, chill-powder, oregano. Now each topping has some cost associated with it and different people want 
 different quantity. So what we can have is in simple way
@@ -61,7 +61,7 @@ Another way is create getter and setter for powder,sauce and oregano's price in 
 - What if a customer wants a double mocha?
 
 
-###So Decorator pattern in rescue
+### So Decorator pattern in rescue
 ![decorator pattern is some thing like this](../images/ch3a.png)
 ![calculate price](../images/ch3b.png)
 
@@ -83,5 +83,5 @@ Some of the JAVA API that use decorator
 ![Java IO](../images/ch3d.png)
 
 
-####Learnings
+#### Learnings
 ![Learnings](../images/ch3e.png)
